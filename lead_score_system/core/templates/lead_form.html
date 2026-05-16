@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Scoring Automatizado</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        .resultado { background-color: #d4edda; color: #155724; padding: 15px; margin-top: 20px; border-radius: 4px; font-weight: bold; text-align: center; }
+        button { background-color: #28a745; color: white; border: none; padding: 10px 20px; width: 100%; cursor: pointer; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h2>Avaliação de Cliente (Lead Scoring)</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Calcular Pontuação</button>
+    </form>
+
+    {% if pontuacao is not null %}
+        <div class="resultado">
+            O cliente foi pontuado com: {{ pontuacao }} pontos!
+        </div>
+    {% endif %}
+</body>
+</html>
