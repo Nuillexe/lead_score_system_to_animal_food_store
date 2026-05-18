@@ -1,0 +1,1 @@
+web: gunicorn lead_score_system.wsgi:application
