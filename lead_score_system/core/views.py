@@ -53,7 +53,7 @@ def avaliar_lead(request):
 
             # Regra por Número de Pets (Mais pets = maior gasto recorrente)
             pets_int = int(numero_pets)
-            pontos+=30*numero_pets
+            pontos+=30*pets_int
 
             # 5. Salva os dados tratados no modelo de banco de dados
             lead = Lead(
