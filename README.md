@@ -37,11 +37,3 @@ It was developed as part of the **OSM (Organização, Sistemas e Métodos)** cou
 - Render (deployment)
 
 ---
-
-## ⚙️ How to Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
